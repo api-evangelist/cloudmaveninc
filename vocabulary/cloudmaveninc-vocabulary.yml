@@ -1,0 +1,119 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml
+vocabulary:
+  name: Cloud Maven Domain Vocabulary
+  description: 'Terms declared by Cloud Maven''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-20'
+  terms:
+  - term: PostOauth2V1TokensBearerRequest
+    definition: 'Object declared by the contract with fields: grant_type, refresh_token.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostOauth2V1TokensBearerRequest
+  - term: PostOauth2V1TokensBearerResponse
+    definition: 'Object declared by the contract with fields: token_type, expires_in, refresh_token, x_refresh_token_expires_in, access_token.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostOauth2V1TokensBearerResponse
+  - term: PostServicesDataV570SobjectsBankconnectBankVerificationCHttp
+    definition: 'Object declared by the contract with fields: bankconnect__ApplicationName__c, bankconnect__Asset_PDF__c, bankconnect__Asset_Request_Duration__c,
+      bankconnect__Email__c, bankconnect__First_Name__c, bankconnect__Last_Name__c, bankconnect__Plaid_Products__c, bankconnect__SkipAutoTriggerEmail__c,
+      bankconnect__ParentRecordId__c.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostServicesDataV570SobjectsBankconnectBankVerificationCHttp
+  - term: PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2
+    definition: 'Object declared by the contract with fields: Id, bankconnect__Verification_Link__c.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2
+  - term: GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx
+    definition: 'Object declared by the contract with fields: Id, bankconnect__Verification_Link__c.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx
+  - term: GetServicesDataV570SobjectsBankconnectBankVerificationCRecor
+    definition: 'Object declared by the contract with fields: Id, bankconnect__Verification_Link__c.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/GetServicesDataV570SobjectsBankconnectBankVerificationCRecor
+  - term: GetServicesOauth2TokenResponse
+    definition: 'Object declared by the contract with fields: access_token, instance_url, token_type, issued_at.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/GetServicesOauth2TokenResponse
+  - term: PostV3CompanyCompanyidAccountRequest
+    definition: 'Object declared by the contract with fields: Name, AccountType, AccountSubType, CurrencyRef.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidAccountRequest
+  - term: PostV3CompanyCompanyidAccountResponse
+    definition: 'Object declared by the contract with fields: Account, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidAccountResponse
+  - term: PostV3CompanyCompanyidCustomerRequest
+    definition: 'Object declared by the contract with fields: DisplayName, CompanyName, PrimaryEmailAddr, PrimaryPhone, BillAddr.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidCustomerRequest
+  - term: PostV3CompanyCompanyidCustomerResponse
+    definition: 'Object declared by the contract with fields: Customer, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidCustomerResponse
+  - term: PostV3CompanyCompanyidInvoiceRequest
+    definition: 'Object declared by the contract with fields: CustomerRef, Line, DueDate, DocNumber.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidInvoiceRequest
+  - term: PostV3CompanyCompanyidInvoiceResponse
+    definition: 'Object declared by the contract with fields: Invoice, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidInvoiceResponse
+  - term: PostV3CompanyCompanyidPaymentRequest
+    definition: 'Object declared by the contract with fields: CustomerRef, TotalAmt, Line.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidPaymentRequest
+  - term: PostV3CompanyCompanyidPaymentResponse
+    definition: 'Object declared by the contract with fields: Payment, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidPaymentResponse
+  - term: GetV3CompanyCompanyidQueryResponse
+    definition: 'Object declared by the contract with fields: QueryResponse, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/GetV3CompanyCompanyidQueryResponse
+  - term: PostV3CompanyRealmidJournalentryRequest
+    definition: 'Object declared by the contract with fields: TxnDate, PrivateNote, Line.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyRealmidJournalentryRequest
+  - term: GetV3CompanyCompanyidCompanyinfoCompanyidResponse
+    definition: 'Object declared by the contract with fields: CompanyInfo, time.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/GetV3CompanyCompanyidCompanyinfoCompanyidResponse
+  - term: Oauth2
+    definition: 'Resource group in the contract; its operation POST /oauth2/v1/tokens/bearer: Refreshes an OAuth access token using a refresh
+      token.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml
+  - term: Services
+    definition: 'Resource group in the contract; its operation POST /services/apexrest/getUpdatesQB: Technical Documentation - QuickBooks Webhook
+      Integration'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml
+  - term: Company
+    definition: 'Resource group in the contract; its operation POST /v3/company/{companyid}/account: Creates a new account in QuickBooks Online.'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml

@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.cloudmaveninc.com/quickbooks-connector/release-notes.md
+sources:
+- https://docs.cloudmaveninc.com/quickbooks-connector/release-notes.md
+- https://docs.cloudmaveninc.com/docgen-esign/release-notes.md
+- https://docs.cloudmaveninc.com/decision-rule-engine/release-notes.md
+- https://docs.cloudmaveninc.com/document-insight/release-notes.md
+entries:
+- breaking: false
+  highlights:
+  - Version 1.20 strengthens DocGen & eSign with a stronger focus on security and compliance.
+  - It introduces eOriginal Vaulting and Digital Signatures to help preserve document authenticity, integrity, and legal validity.
+  - The release also improves the user experience with a clearer Signer Mapping workflow and a smoother End-Signer journey.
+current_version: '1.20'
+note: The page does not specify a versioning scheme or release dates.
+docs: https://docs.cloudmaveninc.com/quickbooks-connector/release-notes.md

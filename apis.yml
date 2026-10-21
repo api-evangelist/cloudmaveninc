@@ -1,23 +1,102 @@
 aid: cloudmaveninc
+
 name: Cloud Maven
-description: 'Cloud Maven is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Cloud Maven Inc automates Salesforce for lending, verification, compliance, payments, and more. It provides an all‑in‑one automation
+  platform that helps teams close faster and work smarter, integrating with Salesforce to streamline loan origination, document verification,
+  compliance checks, and payment processing across financial services.
+
 url: https://raw.githubusercontent.com/api-evangelist/cloudmaveninc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- Automation
+- Salesforce
+- FinTech
+- Lending
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/cloudmaveninc-rules.yml
+- type: JSONLD
+  url: json-ld/cloudmaveninc-context.jsonld
+- type: Vocabulary
+  url: vocabulary/cloudmaveninc-vocabulary.yml
+- type: DataModel
+  url: data-model/cloudmaveninc-data-model.yml
+- type: ChangeLog
+  url: changelog/cloudmaveninc-changelog.yml
+- type: Authentication
+  url: authentication/cloudmaveninc-authentication.yml
+- type: Conformance
+  url: conformance/cloudmaveninc-conformance.yml
+- type: LLMsTxt
+  url: llms/cloudmaveninc-llms.txt
+- type: Hosts
+  url: hosts/cloudmaveninc-hosts.yml
+- type: Vendors
+  url: vendors/cloudmaveninc-vendors.yml
+- type: Newsroom
+  url: https://cloudmaveninc.com/resources/news
+- type: GettingStarted
+  url: https://docs.cloudmaveninc.com/cmengage-hub/getting-started
+- type: DomainSecurity
+  url: security/cloudmaveninc-domain-security.yml
 - type: Website
   url: https://cloudmaveninc.com/
+- type: Documentation
+  url: https://cloudmaveninc.com/suites/cmdocs
+- type: Blog
+  url: https://cloudmaveninc.com/resources/blogs
+- type: PrivacyPolicy
+  url: https://cloudmaveninc.com/privacy-policy
+- type: TermsOfService
+  url: https://cloudmaveninc.com/terms-of-service
+
+apis:
+- aid: cloudmaveninc:cloudmaveninc-api
+  name: Cloud Maven API
+  description: 'Cloud Maven API as documented publicly: 13 operations. Contract generated from the documentation by API Evangelist (2026-10-20);
+    not the provider''s own document.'
+  humanURL: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/cloudmaveninc-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-services-data-v570-sobjects-bankconnect-bank-verification-chttp-schema.json
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-v3-company-realmid-journalentry-request-schema.json
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-v3-company-companyid-account-request-schema.json
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-v3-company-companyid-customer-request-schema.json
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-oauth2-v1-tokens-bearer-response-schema.json
+  - type: JSONSchema
+    url: json-schema/cloudmaveninc-post-v3-company-companyid-invoice-request-schema.json
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 24
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

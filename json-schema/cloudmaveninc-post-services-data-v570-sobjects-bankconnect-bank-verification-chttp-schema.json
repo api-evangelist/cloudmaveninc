@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cloudmaveninc/main/json-schema/cloudmaveninc-post-services-data-v570-sobjects-bankconnect-bank-verification-chttp-schema.json",
+  "title": "PostServicesDataV570SobjectsBankconnectBankVerificationCHttp",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostServicesDataV570SobjectsBankconnectBankVerificationCHttp",
+  "type": "object",
+  "properties": {
+    "bankconnect__ApplicationName__c": {
+      "type": "string"
+    },
+    "bankconnect__Asset_PDF__c": {
+      "type": "boolean"
+    },
+    "bankconnect__Asset_Request_Duration__c": {
+      "type": "integer"
+    },
+    "bankconnect__Email__c": {
+      "type": "string"
+    },
+    "bankconnect__First_Name__c": {
+      "type": "string"
+    },
+    "bankconnect__Last_Name__c": {
+      "type": "string"
+    },
+    "bankconnect__Plaid_Products__c": {
+      "type": "string"
+    },
+    "bankconnect__SkipAutoTriggerEmail__c": {
+      "type": "boolean"
+    },
+    "bankconnect__ParentRecordId__c": {
+      "type": "string"
+    }
+  }
+}

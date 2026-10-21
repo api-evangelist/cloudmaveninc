@@ -1,0 +1,191 @@
+{
+  "@context": {
+    "@vocab": "https://cloudmaveninc.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cloudmaveninc": "https://cloudmaveninc.com/schema#",
+    "PostOauth2V1TokensBearerRequest": "cloudmaveninc:PostOauth2V1TokensBearerRequest",
+    "grant_type": {
+      "@id": "cloudmaveninc:grant_type",
+      "@type": "xsd:string"
+    },
+    "refresh_token": {
+      "@id": "cloudmaveninc:refresh_token",
+      "@type": "xsd:string"
+    },
+    "PostOauth2V1TokensBearerResponse": "cloudmaveninc:PostOauth2V1TokensBearerResponse",
+    "token_type": {
+      "@id": "cloudmaveninc:token_type",
+      "@type": "xsd:string"
+    },
+    "expires_in": {
+      "@id": "cloudmaveninc:expires_in",
+      "@type": "xsd:integer"
+    },
+    "x_refresh_token_expires_in": {
+      "@id": "cloudmaveninc:x_refresh_token_expires_in",
+      "@type": "xsd:integer"
+    },
+    "access_token": {
+      "@id": "cloudmaveninc:access_token",
+      "@type": "xsd:string"
+    },
+    "PostServicesDataV570SobjectsBankconnectBankVerificationCHttp": "cloudmaveninc:PostServicesDataV570SobjectsBankconnectBankVerificationCHttp",
+    "bankconnect__ApplicationName__c": {
+      "@id": "cloudmaveninc:bankconnect__ApplicationName__c",
+      "@type": "xsd:string"
+    },
+    "bankconnect__Asset_PDF__c": {
+      "@id": "cloudmaveninc:bankconnect__Asset_PDF__c",
+      "@type": "xsd:boolean"
+    },
+    "bankconnect__Asset_Request_Duration__c": {
+      "@id": "cloudmaveninc:bankconnect__Asset_Request_Duration__c",
+      "@type": "xsd:integer"
+    },
+    "bankconnect__Email__c": {
+      "@id": "cloudmaveninc:bankconnect__Email__c",
+      "@type": "xsd:string"
+    },
+    "bankconnect__First_Name__c": {
+      "@id": "cloudmaveninc:bankconnect__First_Name__c",
+      "@type": "xsd:string"
+    },
+    "bankconnect__Last_Name__c": {
+      "@id": "cloudmaveninc:bankconnect__Last_Name__c",
+      "@type": "xsd:string"
+    },
+    "bankconnect__Plaid_Products__c": {
+      "@id": "cloudmaveninc:bankconnect__Plaid_Products__c",
+      "@type": "xsd:string"
+    },
+    "bankconnect__SkipAutoTriggerEmail__c": {
+      "@id": "cloudmaveninc:bankconnect__SkipAutoTriggerEmail__c",
+      "@type": "xsd:boolean"
+    },
+    "bankconnect__ParentRecordId__c": {
+      "@id": "cloudmaveninc:bankconnect__ParentRecordId__c",
+      "@type": "xsd:string"
+    },
+    "PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2": "cloudmaveninc:PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2",
+    "Id": {
+      "@id": "cloudmaveninc:Id",
+      "@type": "xsd:string"
+    },
+    "bankconnect__Verification_Link__c": {
+      "@id": "cloudmaveninc:bankconnect__Verification_Link__c",
+      "@type": "xsd:string"
+    },
+    "GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx": "cloudmaveninc:GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx",
+    "GetServicesDataV570SobjectsBankconnectBankVerificationCRecor": "cloudmaveninc:GetServicesDataV570SobjectsBankconnectBankVerificationCRecor",
+    "GetServicesOauth2TokenResponse": "cloudmaveninc:GetServicesOauth2TokenResponse",
+    "instance_url": {
+      "@id": "cloudmaveninc:instance_url",
+      "@type": "xsd:string"
+    },
+    "issued_at": {
+      "@id": "cloudmaveninc:issued_at",
+      "@type": "xsd:string"
+    },
+    "PostV3CompanyCompanyidAccountRequest": "cloudmaveninc:PostV3CompanyCompanyidAccountRequest",
+    "Name": {
+      "@id": "cloudmaveninc:Name",
+      "@type": "xsd:string"
+    },
+    "AccountType": {
+      "@id": "cloudmaveninc:AccountType",
+      "@type": "xsd:string"
+    },
+    "AccountSubType": {
+      "@id": "cloudmaveninc:AccountSubType",
+      "@type": "xsd:string"
+    },
+    "CurrencyRef": {
+      "@id": "cloudmaveninc:CurrencyRef"
+    },
+    "PostV3CompanyCompanyidAccountResponse": "cloudmaveninc:PostV3CompanyCompanyidAccountResponse",
+    "Account": {
+      "@id": "cloudmaveninc:Account"
+    },
+    "time": {
+      "@id": "cloudmaveninc:time",
+      "@type": "xsd:string"
+    },
+    "PostV3CompanyCompanyidCustomerRequest": "cloudmaveninc:PostV3CompanyCompanyidCustomerRequest",
+    "DisplayName": {
+      "@id": "cloudmaveninc:DisplayName",
+      "@type": "xsd:string"
+    },
+    "CompanyName": {
+      "@id": "cloudmaveninc:CompanyName",
+      "@type": "xsd:string"
+    },
+    "PrimaryEmailAddr": {
+      "@id": "cloudmaveninc:PrimaryEmailAddr"
+    },
+    "PrimaryPhone": {
+      "@id": "cloudmaveninc:PrimaryPhone"
+    },
+    "BillAddr": {
+      "@id": "cloudmaveninc:BillAddr"
+    },
+    "PostV3CompanyCompanyidCustomerResponse": "cloudmaveninc:PostV3CompanyCompanyidCustomerResponse",
+    "Customer": {
+      "@id": "cloudmaveninc:Customer"
+    },
+    "PostV3CompanyCompanyidInvoiceRequest": "cloudmaveninc:PostV3CompanyCompanyidInvoiceRequest",
+    "CustomerRef": {
+      "@id": "cloudmaveninc:CustomerRef"
+    },
+    "Line": {
+      "@id": "cloudmaveninc:Line",
+      "@container": "@list"
+    },
+    "DueDate": {
+      "@id": "cloudmaveninc:DueDate",
+      "@type": "xsd:string"
+    },
+    "DocNumber": {
+      "@id": "cloudmaveninc:DocNumber",
+      "@type": "xsd:string"
+    },
+    "PostV3CompanyCompanyidInvoiceResponse": "cloudmaveninc:PostV3CompanyCompanyidInvoiceResponse",
+    "Invoice": {
+      "@id": "cloudmaveninc:Invoice"
+    },
+    "PostV3CompanyCompanyidPaymentRequest": "cloudmaveninc:PostV3CompanyCompanyidPaymentRequest",
+    "TotalAmt": {
+      "@id": "cloudmaveninc:TotalAmt",
+      "@type": "xsd:decimal"
+    },
+    "PostV3CompanyCompanyidPaymentResponse": "cloudmaveninc:PostV3CompanyCompanyidPaymentResponse",
+    "Payment": {
+      "@id": "cloudmaveninc:Payment"
+    },
+    "GetV3CompanyCompanyidQueryResponse": "cloudmaveninc:GetV3CompanyCompanyidQueryResponse",
+    "QueryResponse": {
+      "@id": "cloudmaveninc:QueryResponse"
+    },
+    "PostV3CompanyRealmidJournalentryRequest": "cloudmaveninc:PostV3CompanyRealmidJournalentryRequest",
+    "TxnDate": {
+      "@id": "cloudmaveninc:TxnDate",
+      "@type": "xsd:string"
+    },
+    "PrivateNote": {
+      "@id": "cloudmaveninc:PrivateNote",
+      "@type": "xsd:string"
+    },
+    "GetV3CompanyCompanyidCompanyinfoCompanyidResponse": "cloudmaveninc:GetV3CompanyCompanyidCompanyinfoCompanyidResponse",
+    "CompanyInfo": {
+      "@id": "cloudmaveninc:CompanyInfo"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Cloud Maven API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Cloud Maven's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-20) from openapi/_ae-authored/cloudmaveninc-openapi-generated.yml.",
+  "dcterms:created": "2026-10-20",
+  "dcterms:source": [
+    "openapi/_ae-authored/cloudmaveninc-openapi-generated.yml"
+  ]
+}

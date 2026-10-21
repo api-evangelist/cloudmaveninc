@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cloudmaveninc/main/json-schema/cloudmaveninc-post-oauth2-v1-tokens-bearer-response-schema.json",
+  "title": "PostOauth2V1TokensBearerResponse",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostOauth2V1TokensBearerResponse",
+  "type": "object",
+  "properties": {
+    "token_type": {
+      "type": "string"
+    },
+    "expires_in": {
+      "type": "integer"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "x_refresh_token_expires_in": {
+      "type": "integer"
+    },
+    "access_token": {
+      "type": "string"
+    }
+  }
+}

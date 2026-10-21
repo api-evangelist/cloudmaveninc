@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cloudmaveninc/main/json-schema/cloudmaveninc-post-v3-company-companyid-invoice-request-schema.json",
+  "title": "PostV3CompanyCompanyidInvoiceRequest",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidInvoiceRequest",
+  "type": "object",
+  "properties": {
+    "CustomerRef": {
+      "type": "object"
+    },
+    "Line": {
+      "type": "array"
+    },
+    "DueDate": {
+      "type": "string",
+      "description": "YYYY-MM-DD"
+    },
+    "DocNumber": {
+      "type": "string"
+    }
+  }
+}

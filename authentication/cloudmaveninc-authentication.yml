@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/quickbooks-credentials-update-snippets.md
+sources:
+- https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/quickbooks-credentials-update-snippets.md
+- https://docs.cloudmaveninc.com/bank-connect/admin-guide/set-up-plaid-credentials-features-via-script.md
+- https://docs.cloudmaveninc.com/docgen-esign/user-guide/document-signing-certificate.md
+- https://docs.cloudmaveninc.com/thomson-reuters-clear/admin-guide/how-to-setup-clear-credentials.md
+description: Authentication schemes for Cloud Maven connectors as documented.
+schemes:
+- type: oauth2
+  name: QuickBooks OAuth
+  evidence: Updates QuickBooks OAuth credentials and State URL for a specified QuickBooks Credential record.
+  token_url: https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer
+  how_to_obtain: Provide clientId, clientSecret, and stateURL via the AdminServices.updateQBCredentials method.
+docs: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/quickbooks-credentials-update-snippets.md
+note: 1 extracted row(s) were dropped because their quote was not on the page.

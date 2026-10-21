@@ -1,0 +1,32 @@
+generated: '2026-10-20'
+method: probed
+source: https://cloudmaveninc.com/privacy-policy
+signals:
+  data_retention:
+    - source: https://cloudmaveninc.com/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "We retain personal information only as long as necessary to fulfill the purposes described in this Policy or as required by law. When data is no longer needed, it is securely deleted or anonymized."
+      section: "5. Data Retention"
+      note: Retains data only as needed, deletes or anonymizes thereafter.
+  data_subject_request:
+    - source: https://cloudmaveninc.com/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "Access, correct, or delete personal information we hold about you"
+      section: "6. Your Rights and Choices"
+      note: Provides rights to access, correct, delete data.
+  data_portability:
+    - source: https://cloudmaveninc.com/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "Request a copy of your personal data (data portability)"
+      section: "6. Your Rights and Choices"
+      note: Allows data portability requests.
+  withdraw_consent:
+    - source: https://cloudmaveninc.com/privacy-policy
+      http_status: 200
+      fetched: true
+      quote: "Withdraw consent for marketing communications at any time"
+      section: "6. Your Rights and Choices"
+      note: Users can withdraw marketing consent.

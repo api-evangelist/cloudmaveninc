@@ -1,0 +1,580 @@
+openapi: 3.1.0
+info:
+  title: Cloud Maven API
+  version: '2026-10-20'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-20: 13 operation(s) read from 6 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Cloud Maven has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 3
+    documentation: 10
+    pages-with-code: 1
+    pages-read: 6
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-20'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+  - https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/technical-guide/technical-documentation-quickbooks-webhook-integration.md
+  - https://docs.cloudmaveninc.com/bank-connect/admin-guide/steps-to-setup-bankconnect-via-custom-portal/api-documentation-for-bank-verification-record.md
+  - https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/class-level-information-for-quickbooks-integration.md
+  - https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/technical-guide/technical-documentation-quickbooks-budget-sync.md
+  - https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/technical-guide/technical-documentation-journal-entry-creation-manual.md
+paths:
+  /oauth2/v1/tokens/bearer:
+    post:
+      operationId: post_oauth2_v1_tokens_bearer
+      tags:
+      - Oauth2
+      summary: Refresh Access Token
+      description: Refreshes an OAuth access token using a refresh token.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostOauth2V1TokensBearerRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostOauth2V1TokensBearerResponse'
+      x-evidence:
+        kind: documentation
+  /services/apexrest/getUpdatesQB:
+    post:
+      operationId: post_services_apexrest_getUpdatesQB
+      tags:
+      - Services
+      summary: Technical Documentation - QuickBooks Webhook Integration
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/technical-guide/technical-documentation-quickbooks-webhook-integration.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  ? /services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/](https://yourinstance.salesforce.com/services/data/v57.0/sobjects/bankconnect__Bank_Verification__c
+  : post:
+      operationId: post_services_data_v57_0_sobjects_bankconnect_Bank_Verification_c_https_yourinst
+      tags:
+      - Services
+      summary: POST /services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/](https://yourinstance.salesforce.com/services/data/v57.0/sobjects/bankconnect__Bank_Verification__c
+      x-source: https://docs.cloudmaveninc.com/bank-connect/admin-guide/steps-to-setup-bankconnect-via-custom-portal/api-documentation-for-bank-verification-record.md
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostServicesDataV570SobjectsBankconnectBankVerificationCHttp'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl Example**                                                                                                                                                                                                                                                                                                                                                                                                  '
+  ? /services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/a01XXXXXXXXXXXX](https://yourinstance.salesforce.com/services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/a01XXXXXXXXXXXX
+  : get:
+      operationId: get_services_data_v57_0_sobjects_bankconnect_Bank_Verification_c_a01XXXXXXXXXXXX
+      tags:
+      - Services
+      summary: GET /services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/a01XXXXXXXXXXXX](https://yourinstance.salesforce.com/services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/a01XXXXXXXXXXXX
+      x-source: https://docs.cloudmaveninc.com/bank-connect/admin-guide/steps-to-setup-bankconnect-via-custom-portal/api-documentation-for-bank-verification-record.md
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl Example**                                                                                                                                                                                                                                                                                                                                                                                                  '
+  /services/data/v57.0/sobjects/bankconnect__Bank_Verification__c/{recordid}:
+    get:
+      operationId: get_services_data_v57_0_sobjects_bankconnect_Bank_Verification_c_recordid
+      tags:
+      - Services
+      summary: API Documentation for Bank Verification Record
+      x-source: https://docs.cloudmaveninc.com/bank-connect/admin-guide/steps-to-setup-bankconnect-via-custom-portal/api-documentation-for-bank-verification-record.md
+      parameters:
+      - name: recordid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: fields
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Comma‑separated list of fields to retrieve, e.g., Bank_Verification_URL__c
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetServicesDataV570SobjectsBankconnectBankVerificationCRecor'
+      x-evidence:
+        kind: documentation
+  /services/oauth2/token:
+    get:
+      operationId: get_services_oauth2_token
+      tags:
+      - Services
+      summary: GET /services/oauth2/token
+      x-source: https://docs.cloudmaveninc.com/bank-connect/admin-guide/steps-to-setup-bankconnect-via-custom-portal/api-documentation-for-bank-verification-record.md
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetServicesOauth2TokenResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl Example**                                                                                                                                                                                                                                                                                                                                                                                                  '
+  /v3/company/{companyid}/account:
+    post:
+      operationId: post_v3_company_companyid_account
+      tags:
+      - Company
+      summary: Create Account
+      description: Creates a new account in QuickBooks Online.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV3CompanyCompanyidAccountRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV3CompanyCompanyidAccountResponse'
+      x-evidence:
+        kind: documentation
+  /v3/company/{companyid}/customer:
+    post:
+      operationId: post_v3_company_companyid_customer
+      tags:
+      - Company
+      summary: Create Customer
+      description: Creates a new customer record.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV3CompanyCompanyidCustomerRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV3CompanyCompanyidCustomerResponse'
+      x-evidence:
+        kind: documentation
+  /v3/company/{companyid}/invoice:
+    post:
+      operationId: post_v3_company_companyid_invoice
+      tags:
+      - Company
+      summary: Create Invoice
+      description: Creates a new invoice.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV3CompanyCompanyidInvoiceRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV3CompanyCompanyidInvoiceResponse'
+      x-evidence:
+        kind: documentation
+  /v3/company/{companyid}/payment:
+    post:
+      operationId: post_v3_company_companyid_payment
+      tags:
+      - Company
+      summary: Create Payment
+      description: Creates a new payment.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV3CompanyCompanyidPaymentRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV3CompanyCompanyidPaymentResponse'
+      x-evidence:
+        kind: documentation
+  /v3/company/{companyid}/query:
+    get:
+      operationId: get_v3_company_companyid_query
+      tags:
+      - Company
+      summary: Query (SQL-like)
+      description: Executes a QBO query.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: query
+        in: query
+        required: true
+        schema:
+          type: string
+        description: SQL‑like query string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV3CompanyCompanyidQueryResponse'
+      x-evidence:
+        kind: documentation
+  /v3/company/{realmid}/journalentry:
+    post:
+      operationId: post_v3_company_realmid_journalentry
+      tags:
+      - Company
+      summary: Technical Documentation - Journal Entry creation (manual)
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/developer-guide/technical-guide/technical-documentation-journal-entry-creation-manual.md
+      parameters:
+      - name: realmid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV3CompanyRealmidJournalentryRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /v3/company/{companyId}/companyinfo/{companyId}:
+    get:
+      operationId: get_v3_company_companyId_companyinfo_companyId
+      tags:
+      - Company
+      summary: Get Company Info
+      description: Retrieves company information.
+      x-source: https://docs.cloudmaveninc.com/quickbooks-connector/api-guide/references.md
+      parameters:
+      - name: companyId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: companyId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: minorversion
+        in: query
+        required: false
+        schema:
+          type: integer
+        description: Minor Version 75
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV3CompanyCompanyidCompanyinfoCompanyidResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostOauth2V1TokensBearerRequest:
+      type: object
+      properties:
+        grant_type:
+          type: string
+          description: refresh_token
+        refresh_token:
+          type: string
+      required:
+      - grant_type
+      - refresh_token
+    PostOauth2V1TokensBearerResponse:
+      type: object
+      properties:
+        token_type:
+          type: string
+        expires_in:
+          type: integer
+        refresh_token:
+          type: string
+        x_refresh_token_expires_in:
+          type: integer
+        access_token:
+          type: string
+    PostServicesDataV570SobjectsBankconnectBankVerificationCHttp:
+      type: object
+      properties:
+        bankconnect__ApplicationName__c:
+          type: string
+        bankconnect__Asset_PDF__c:
+          type: boolean
+        bankconnect__Asset_Request_Duration__c:
+          type: integer
+        bankconnect__Email__c:
+          type: string
+        bankconnect__First_Name__c:
+          type: string
+        bankconnect__Last_Name__c:
+          type: string
+        bankconnect__Plaid_Products__c:
+          type: string
+        bankconnect__SkipAutoTriggerEmail__c:
+          type: boolean
+        bankconnect__ParentRecordId__c:
+          type: string
+    PostServicesDataV570SobjectsBankconnectBankVerificationCHttp2:
+      type: object
+      properties:
+        Id:
+          type: string
+        bankconnect__Verification_Link__c:
+          type: string
+    GetServicesDataV570SobjectsBankconnectBankVerificationCA01Xx:
+      type: object
+      properties:
+        Id:
+          type: string
+        bankconnect__Verification_Link__c:
+          type: string
+    GetServicesDataV570SobjectsBankconnectBankVerificationCRecor:
+      type: object
+      properties:
+        Id:
+          type: string
+          description: Record ID
+        bankconnect__Verification_Link__c:
+          type: string
+          description: Verification link URL
+    GetServicesOauth2TokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+        instance_url:
+          type: string
+        token_type:
+          type: string
+        issued_at:
+          type: string
+    PostV3CompanyCompanyidAccountRequest:
+      type: object
+      properties:
+        Name:
+          type: string
+        AccountType:
+          type: string
+        AccountSubType:
+          type: string
+        CurrencyRef:
+          type: object
+          description: Contains value and name of currency
+      required:
+      - Name
+    PostV3CompanyCompanyidAccountResponse:
+      type: object
+      properties:
+        Account:
+          type: object
+        time:
+          type: string
+    PostV3CompanyCompanyidCustomerRequest:
+      type: object
+      properties:
+        DisplayName:
+          type: string
+        CompanyName:
+          type: string
+        PrimaryEmailAddr:
+          type: object
+        PrimaryPhone:
+          type: object
+        BillAddr:
+          type: object
+      required:
+      - DisplayName
+    PostV3CompanyCompanyidCustomerResponse:
+      type: object
+      properties:
+        Customer:
+          type: object
+        time:
+          type: string
+    PostV3CompanyCompanyidInvoiceRequest:
+      type: object
+      properties:
+        CustomerRef:
+          type: object
+        Line:
+          type: array
+        DueDate:
+          type: string
+          description: YYYY-MM-DD
+        DocNumber:
+          type: string
+    PostV3CompanyCompanyidInvoiceResponse:
+      type: object
+      properties:
+        Invoice:
+          type: object
+        time:
+          type: string
+    PostV3CompanyCompanyidPaymentRequest:
+      type: object
+      properties:
+        CustomerRef:
+          type: object
+        TotalAmt:
+          type: number
+        Line:
+          type: array
+    PostV3CompanyCompanyidPaymentResponse:
+      type: object
+      properties:
+        Payment:
+          type: object
+        time:
+          type: string
+    GetV3CompanyCompanyidQueryResponse:
+      type: object
+      properties:
+        QueryResponse:
+          type: object
+        time:
+          type: string
+    PostV3CompanyRealmidJournalentryRequest:
+      type: object
+      properties:
+        TxnDate:
+          type: string
+          description: Transaction date (YYYY-MM-DD)
+        PrivateNote:
+          type: string
+          description: Internal memo
+        Line:
+          type: array
+          description: Array of journal line objects
+      required:
+      - TxnDate
+      - Line
+    GetV3CompanyCompanyidCompanyinfoCompanyidResponse:
+      type: object
+      properties:
+        CompanyInfo:
+          type: object
+        time:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+security:
+- bearer: []
+tags:
+- name: Company
+- name: Oauth2
+- name: Services

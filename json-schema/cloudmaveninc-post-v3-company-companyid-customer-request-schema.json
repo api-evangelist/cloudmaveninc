@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/cloudmaveninc/main/json-schema/cloudmaveninc-post-v3-company-companyid-customer-request-schema.json",
+  "title": "PostV3CompanyCompanyidCustomerRequest",
+  "x-generated": "2026-10-20",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/cloudmaveninc-openapi-generated.yml#/components/schemas/PostV3CompanyCompanyidCustomerRequest",
+  "type": "object",
+  "properties": {
+    "DisplayName": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "PrimaryEmailAddr": {
+      "type": "object"
+    },
+    "PrimaryPhone": {
+      "type": "object"
+    },
+    "BillAddr": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "DisplayName"
+  ]
+}
